@@ -10,5 +10,7 @@ namespace YellowBoxAutomatedTestTools.WebDriversComponentes
     {
         public string Usuario { get; set; }
         public string Password { get; set; }
+
+        public int MyProperty { get; set; }
     }
 }
