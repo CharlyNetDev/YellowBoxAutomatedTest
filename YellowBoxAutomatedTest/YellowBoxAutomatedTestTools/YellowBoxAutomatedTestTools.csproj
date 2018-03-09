@@ -85,6 +85,7 @@
     <Compile Include="YellowBoxObjetos.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DatosPrueba.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>

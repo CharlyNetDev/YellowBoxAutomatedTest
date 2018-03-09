@@ -8,7 +8,8 @@ using Microsoft.VisualStudio.TestTools.UITesting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.VisualStudio.TestTools.UITest.Extension;
 using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
-
+using YellowBoxAutomatedTestTools;
+using OpenQA.Selenium;
 
 namespace YellowBoxAutomatedTest
 {
@@ -16,16 +17,21 @@ namespace YellowBoxAutomatedTest
     /// Summary description for CodedUITest1
     /// </summary>
     [CodedUITest]
-    public class CodedUITest1
+    public class TestCase
     {
-        public CodedUITest1()
+        public TestCase()
         {
         }
 
+        YellowBoxAutomatedTestTools.WebDriversComponentes.Navegadores navegadorTest = new YellowBoxAutomatedTestTools.WebDriversComponentes.Navegadores();
+        YellowBoxAutomatedTestTools.WebDriversComponentes.YellowBoxObjetos objetosPrueba = new YellowBoxAutomatedTestTools.WebDriversComponentes.YellowBoxObjetos();
+
         [TestMethod]
-        public void CodedUITestMethod1()
+        public void LogInYellowBoxExitoso()
         {
-            // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+            IWebDriver driver = null;
+            driver = navegadorTest.LanzarNavegador("Chrome");
+            driver.Navigate().GoToUrl("http://google.com");
         }
 
         #region Additional test attributes
