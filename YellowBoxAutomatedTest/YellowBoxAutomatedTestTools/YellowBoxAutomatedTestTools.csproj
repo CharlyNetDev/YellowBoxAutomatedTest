@@ -79,14 +79,16 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CargaDatos.cs" />
+    <Compile Include="Herramientas\CargaDatos.cs" />
     <Compile Include="CodedUITest1.cs" />
-    <Compile Include="Navegadores.cs" />
+    <Compile Include="LogIn\ElementosLogIn.cs" />
+    <Compile Include="Herramientas\Navegadores.cs" />
+    <Compile Include="LogIn\ProcesoLogIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="YellowBoxObjetos.cs" />
+    <Compile Include="Herramientas\YellowBoxObjetos.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DatosPrueba.xlsx" />
+    <None Include="Herramientas\DatosPrueba.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>

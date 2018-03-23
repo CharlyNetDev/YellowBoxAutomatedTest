@@ -4,12 +4,12 @@ using OpenQA.Selenium;
 namespace YellowBoxAutomatedTestTools.WebDriversComponentes
 {
     public class Navegadores
-    { 
-        public IWebDriver LanzarNavegador (string tipoNavegador)
+    {
+        public IWebDriver LanzarNavegador(YellowBoxObjetos objetosPrueba)
         {
             IWebDriver driver = null;
 
-            if (tipoNavegador == "Chrome")
+            if (objetosPrueba.Navegador.Equals("Chrome"))
             {
                 ChromeOptions opciones = new ChromeOptions();
                
